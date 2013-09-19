@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="stylesheet" href="application.css" type="text/css" />
+</head>
+<body>
+	<h1>The Clash has Begun!</h1>
+
+	<h3>and the winner is:</h3>
+
+	<p><%= @winner %> with <%= @winner.count %> tweets.</p>
+
+	<h3>and the loser is</h3>
+
+	<p>"<%= @loser %>" with <%= @loser.count %> tweets.</p>
+
+	<div class="divider">
+		
+	</div>
+
+	<h3>Tweets</h3>
+
+	<% @tweets.each do |item| %>
+
+	<p><%= item.user %>: <%= item.tweet %></p>
+
+	<% end %>
+
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
